@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Weekly Webdev Challenge 1</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href=""><img src="./media/img/logo-top.png" alt="" class="header__logo-top"></a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main__container">
+            <div class="col">
+                <div class="form-box">
+                    <h1 class="form-box__title">Register Form</h1>
+                    <form class="form-box__form form">
+                        <ul class="form__list">
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--user" for="username"></label>
+                                <input class="form__input-text" type="text" name="username" id="username" placeholder="Username">
+                            </li>
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--lock" for="password"></label>
+                                <input class="form__input-text" type="password" name="password" id="password" placeholder="Password">
+                            </li>
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--lock" for="password_confirm"></label>
+                                <input class="form__input-text" type="password" name="password_confirm" id="password_confirm" placeholder="Confirm Password">
+                            </li>
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--envelope" for="email"></label>
+                                <input class="form__input-text" type="email" name="email" id="email" placeholder="Email">
+                            </li>
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--maps" for="location"></label>
+                                <select class="form__input-text" name="location" id="location">
+                                    <option value="" disabled selected>Your Location</option>
+                                    <option value="Berlin">Berlin</option>
+                                    <option value="Warsaw">Warsaw</option>
+                                </select>
+                            </li>
+                            <li class="form__item">
+                                <input class="form__input-checkbox" type="checkbox" name="consent" id="consent">
+                                <label class="form__label label__text" for="consent">I have read and accept the terms of use.</label>
+                            </li>
+                            <li class="form__item">
+                                <button class="form__button button button--green button--lg">Sign up</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="form-box">
+                    <h1 class="form-box__title">Send Form</h1>
+                    <form class="form-box__form form">
+                        <ul class="form__list">
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--user" for="username"></label>
+                                <input class="form__input-text" type="text" name="username" id="username" placeholder="Username">
+                            </li>
+
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--envelope" for="email"></label>
+                                <input class="form__input-text" type="email" name="email" id="email" placeholder="Email">
+                            </li>
+                            <li class="form__item form__fieldrow">
+                                <textarea class="form__input-text" id="story" name="story" placeholder="Type yor message..."></textarea>
+                            </li>
+                            <li class="form__item">
+                                <input class="form__input-checkbox" type="checkbox" name="copy" id="copy">
+                                <label class="form__label label__text" for="copy">Send a copy to my Email</label>
+                            </li>
+                            <li class="form__item">
+                                <button class="form__button button button--green button--lg">Send Email</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-box">
+                    <h1 class="form-box__title">Sign in Form</h1>
+                    <form class="form-box__form form">
+                        <ul class="form__list">
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--envelope" for="email"></label>
+                                <input class="form__input-text" type="email" name="email" id="email" placeholder="Enter your Email">
+                            </li>
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--lock" for="password"></label>
+                                <input class="form__input-text" type="password" name="password" id="password" placeholder="Password">
+                            </li>
+                            <li class="form__item">
+                                <input class="form__input-checkbox" type="checkbox" name="remember" id="remember">
+                                <label class="form__label label__text" for="remember">Remember me</label>
+                                <button class="form__button button button--green button--sml">Sign In</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="form-box">
+                    <h1 class="form-box__title">Recover Form</h1>
+                    <form class="form-box__form form">
+                        <ul class="form__list">
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--envelope" for="email"></label>
+                                <input class="form__input-text" type="email" name="email" id="email" placeholder="Enter your Email">
+                            </li>
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--phone" for="email"></label>
+                                <input class="form__input-text" type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Enter your Phone Number">
+                            </li>
+                            <li class="form__item">
+                                <button class="form__button button button--green button--sml">Send Email</button>
+                                <button class="form__button button button--is-disabled button--sml">Done</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="form-box">
+                    <h1 class="form-box__title">Subscribe Form</h1>
+                    <form class="form-box__form form">
+                        <ul class="form__list">
+                            <li class="form__item form__fieldrow">
+                                <label class="form__label label__img label__img--envelope" for="email"></label>
+                                <input class="form__input-text" type="email" name="email" id="email" placeholder="Enter your Email">
+                            </li>
+                            <li class="form__item">
+                                <button class="form__button button button--green button--sml">Subscribe</button>
+                                <button class="form__button button button--red button--sml">No, Thanks</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href=""><img src="./media/img/logo-bottom.png" alt="" class="header__logo-top"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
